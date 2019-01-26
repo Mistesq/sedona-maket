@@ -107,8 +107,28 @@
         </ul>
       </footer>
     </section>
-    <section class="form-search">
-      <!-- Здесь будет форма -->
+    <section class="search-hotels">
+      <h2 class="search-hotels-title">Поиск гостницы в седоне</h2>
+      <form class="form-search" action="index.html" method="post">
+        <p>
+          <label for="arrival-date">Дата заезда</label>
+          <input class="search-arrival-date" id="arrival-date" type="text" name="arrival-date"  placeholder="21 января 2018">
+          <img src="" alt="">
+        </p>
+        <p>
+          <label for="departure-date">Дата выезда</label>
+          <input class="search-departure-date" id="departure-date" type="text" name="departure-date" placeholder="28 января 2018">
+          <img src="" alt="">
+        </p>
+        <p>
+          <label for="amount-adults">Взрослые:</label>
+          <input class="search-amount-adults" id="amount-adults" type="number" name="amount-adults" min="1" max="5" placeholder="2">
+          <label for="amount-children">Дети:</label>
+          <input class="search-amount-children" id="amount-children" type="number" name="amount-children" min="1" max="5" placeholder="0">
+        </p>
+        <button class="button" type="submit">Найти</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
 
   </main>
