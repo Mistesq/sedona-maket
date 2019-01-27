@@ -9,8 +9,8 @@
 <body>
   <header class="main-header">
       <nav class="main-navigation">
-          <a class="main-header-logo">
-              <img src="img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
+          <a class="main-header-logo" href="index.html">
+              <img src="img\Логотип.png" width="138" height="70" alt="Логотип «Седона»">
           </a>
           <ul class="site-navigation">
               <li>
@@ -32,15 +32,59 @@
 
     <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+        <fieldset>
+          <legend>Инфаструктура:</legend>
+          <ul class="filters-hotels">
+            <li class="filters-option">
+              <input   class=" vissually-hidden filters-input filter-input-checkbox" id="filters-pool" type="checkbox" name="pool" checked>
+              <label for="filters-pool">Бассейн</label>
+            </li>
+            <li class="filters-option">
+              <input  class=" visually-hidden filters-input filters-input-checkbox" id="filters-parking" type="checkbox" name="parking">
+              <label for="filters-parking">Парковка</label>
+            </li>
+            <li class="filters-option">
+              <input  class=" visually-hidden filters-input filters-input-checkbox" id="filters-wifi" type="checkbox" name="wifi">
+              <label for="filters-wifi">Wi-fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul class="filters-type-housing">
+            <li class="filters-option">
+              <input class=" vissually-hidden filters-input filter-input-checkbox" id="filters-hotel" type="checkbox" name="hotel" checked>
+              <label for="filters-hotel">Гостиница</label>
+            </li>
+            <li class="filters-option">
+              <input class=" vissually-hidden filters-input filter-input-checkbox" id="filters-motel" type="checkbox" name="motel" checked>
+              <label for="filters-motel">Мотель</label>
+            </li>
+            <li class="filters-option">
+              <input class=" vissually-hidden filters-input filter-input-checkbox" id="filters-apartments" type="checkbox" name="apartments" checked>
+              <label for="filters-apartments">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость в сутки(Р):</legend>
+          <div class="container-cost-value">
+            <span>от 0</span>
+            <span>до 3000</span>
+          </div>
+          <img src="img/filter-range.png" height="2" width="317" alt="">
+          <a href="" title="0"><img src="img\filter-button.svg" height="20" width="22" alt="до 3000"></a>
+          <a href="" title="3000"><img src="img\filter-button.svg" height="20" width="22" alt="от 0"></a>
+          <button type="submit">Показать</button>
+        </fieldset>
     </section>
 
     <ul class="breadcrumbs">
-        <li class="breadcrumbs-current"><b>Найдено:3</b>
+        <li class="breadcrumbs"><b>Найдено:3</b>
         </li>
-        <li class="breadcrumbs-current">Сортировка:
+        <li class="breadcrumbs">Сортировка:
         </li>
-        <li>
+        <li class="breadcrumbs-current">
             <a href="index.html">По цене</a>
         </li>
         <li>
@@ -50,7 +94,10 @@
             <a href="catalog.html">По рейтингу</a>
         </li>
     </ul>
-    <div class="arrows"></div>
+    <div class="arrows">
+      <img src="img\icon-up-dir.svg" width="11" height="10" alt="стрелка вверх">
+      <img src="img\icon-down-dir.svg" width="11" height="10" alt="стрелка вниз">
+    </div>
 
       <section class="catalog">
           <h2 class="visually-hidden">Список жилья</h2>
@@ -58,13 +105,16 @@
               <li class="catalog-item">
                   <p class="catalog-item-image">
                       <a href="catalog-item.html">
-                          <img src="img/product-1.jpg" width="220" height="165" alt="Фото жилья">
+                          <img src="img\hotels-photo1.jpg" width="135" height="90" alt="Фото гостиницы">
                       </a>
                   </p>
                   <p class="catalog-item-head">
                     <h1>Amara Resort & Spa</h1>
                     <div class="catalog-item-stars">
-                      <img src="" alt="">
+                      <img src="img\star.svg" width="18" height="17" alt="звезда рейтинга">
+                      <img src="img\star.svg" width="18" height="17" alt="звезда рейтинга">
+                      <img src="img\star.svg" width="18" height="17" alt="звезда рейтинга">
+                      <img src="img\star.svg" width="18" height="17" alt="звезда рейтинга">
                     </div>
                   </p>
                   <p class="catalog-item-cost">
@@ -81,13 +131,15 @@
               <li class="catalog-item">
                   <p class="catalog-item-image">
                       <a href="catalog-item.html">
-                          <img src="img/product-1.jpg" width="220" height="165" alt="Фото жилья">
+                          <img src="img\hotels-photo2.jpg" width="135" height="90" alt="Фото мотеля">
                       </a>
                   </p>
                   <p class="catalog-item-head">
                     <h1>Desert Quail Inn</h1>
                     <div class="catalog-item-stars">
-                      <img src="" alt="">
+                      <img src="img\star.svg" width="18" height="17" alt="звезда рейтинга">
+                      <img src="img\star.svg" width="18" height="17" alt="звезда рейтинга">
+                      <img src="img\star.svg" width="18" height="17" alt="звезда рейтинга">
                     </div>
                   </p>
                   <p class="catalog-item-cost">
@@ -104,13 +156,14 @@
               <li class="catalog-item">
                   <p class="catalog-item-image">
                       <a href="catalog-item.html">
-                          <img src="img/product-1.jpg" width="220" height="165" alt="Фото жилья">
+                          <img src="img\hotels-photo3.jpg" width="135" height="90" alt="Фото апартаментов">
                       </a>
                   </p>
                   <p class="catalog-item-head">
                     <h1>Villas at Poco Diablo</h1>
                     <div class="catalog-item-stars">
-                      <img src="" alt="">
+                      <img src="img\star.svg" width="18" height="17" alt="звезда рейтинга">
+                      <img src="img\star.svg" width="18" height="17" alt="звезда рейтинга">
                     </div>
                   </p>
                   <p class="catalog-item-cost">
