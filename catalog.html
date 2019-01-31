@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
 <body>
   <header class="main-header">
       <nav class="main-navigation">
           <a class="main-header-logo" href="index.html">
-              <img src="img\Логотип.png" width="138" height="70" alt="Логотип «Седона»">
+              <img src="img/Логотип.png" width="138" height="70" alt="Логотип «Седона»">
           </a>
           <ul class="site-navigation">
               <li>
@@ -23,7 +26,7 @@
                   <a href="price.html">Карта штата</a>
               </li>
               <li>
-                  <a href="catalog.html">Гостиницы</a>
+                  <a class="current-link" href="catalog.html">Гостиницы</a>
               </li>
           </ul>
       </nav>
@@ -73,8 +76,8 @@
             <span>до 3000</span>
           </div>
           <img src="img/filter-range.png" height="2" width="317" alt="">
-          <a href="" title="0"><img src="img\filter-button.svg" height="20" width="22" alt="до 3000"></a>
-          <a href="" title="3000"><img src="img\filter-button.svg" height="20" width="22" alt="от 0"></a>
+          <a href="" title="0"><img src="img/filter-button.svg" height="20" width="22" alt="до 3000"></a>
+          <a href="" title="3000"><img src="img/filter-button.svg" height="20" width="22" alt="от 0"></a>
           <button type="submit">Показать</button>
         </fieldset>
     </section>
@@ -95,8 +98,8 @@
         </li>
     </ul>
     <div class="arrows">
-      <img src="img\icon-up-dir.svg" width="11" height="10" alt="стрелка вверх">
-      <img src="img\icon-down-dir.svg" width="11" height="10" alt="стрелка вниз">
+      <img src="img/icon-up-dir.svg" width="11" height="10" alt="стрелка вверх">
+      <img src="img/icon-down-dir.svg" width="11" height="10" alt="стрелка вниз">
     </div>
 
       <section class="catalog">
@@ -105,79 +108,86 @@
               <li class="catalog-item">
                   <p class="catalog-item-image">
                       <a href="catalog-item.html">
-                          <img src="img\hotels-photo1.jpg" width="135" height="90" alt="Фото гостиницы">
+                          <img src="img/hotels-photo1.jpg" width="135" height="90" alt="Фото гостиницы">
                       </a>
                   </p>
                   <p class="catalog-item-head">
-                    <h1>Amara Resort & Spa</h1>
-                    <div class="catalog-item-stars">
-                      <img src="img\star.svg" width="18" height="17" alt="звезда рейтинга">
-                      <img src="img\star.svg" width="18" height="17" alt="звезда рейтинга">
-                      <img src="img\star.svg" width="18" height="17" alt="звезда рейтинга">
-                      <img src="img\star.svg" width="18" height="17" alt="звезда рейтинга">
-                    </div>
+                    <a class="catalog-item-title">Amara Resort & Spa</a>
                   </p>
                   <p class="catalog-item-cost">
                       <span class="catalog-item-typeLocation">Гостиница</span>
                       <span class="catalog-item-cost">от 4000 Р.</span>
                   </p>
                   <p class="catalog-item-booking">
-                      <a class="button" href="#">Подробнее</a>
+                      <a class="button button-link" href="#">Подробнее</a>
                       <a class="button" href="#">Забронировать</a>
-                      <span class="catalog-item-rating">Рейтинг: 8.5</span>
+                  </p>
+                  <div class="catalog-item-stars">
+                    <img src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
+                    <img src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
+                    <img src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
+                    <img src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
+                  </div>
+                  <p class="catalog-item-rating">
+                    <span>Рейтинг: 8.5</span>
                   </p>
               </li>
 
               <li class="catalog-item">
                   <p class="catalog-item-image">
                       <a href="catalog-item.html">
-                          <img src="img\hotels-photo2.jpg" width="135" height="90" alt="Фото мотеля">
+                          <img src="img/hotels-photo2.jpg" width="135" height="90" alt="Фото мотеля">
                       </a>
                   </p>
                   <p class="catalog-item-head">
-                    <h1>Desert Quail Inn</h1>
-                    <div class="catalog-item-stars">
-                      <img src="img\star.svg" width="18" height="17" alt="звезда рейтинга">
-                      <img src="img\star.svg" width="18" height="17" alt="звезда рейтинга">
-                      <img src="img\star.svg" width="18" height="17" alt="звезда рейтинга">
-                    </div>
+                    <a class="catalog-item-title">Desert Quail Inn</a>
                   </p>
                   <p class="catalog-item-cost">
                       <span class="catalog-item-typeLocation">Мотель</span>
                       <span class="catalog-item-cost">от 3000 Р.</span>
                   </p>
                   <p class="catalog-item-booking">
-                      <a class="button" href="#">Подробнее</a>
+                      <a class="button button-link" href="#">Подробнее</a>
                       <a class="button" href="#">Забронировать</a>
-                      <span class="catalog-item-rating">Рейтинг: 8.9</span>
+                  </p>
+                  <div class="catalog-item-stars">
+                    <img src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
+                    <img src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
+                    <img src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
+                  </div>
+                  <p class="catalog-item-rating">
+                    <span>Рейтинг: 8.9</span>
                   </p>
               </li>
 
               <li class="catalog-item">
                   <p class="catalog-item-image">
                       <a href="catalog-item.html">
-                          <img src="img\hotels-photo3.jpg" width="135" height="90" alt="Фото апартаментов">
+                          <img src="img/hotels-photo3.jpg" width="135" height="90" alt="Фото апартаментов">
                       </a>
                   </p>
                   <p class="catalog-item-head">
-                    <h1>Villas at Poco Diablo</h1>
-                    <div class="catalog-item-stars">
-                      <img src="img\star.svg" width="18" height="17" alt="звезда рейтинга">
-                      <img src="img\star.svg" width="18" height="17" alt="звезда рейтинга">
-                    </div>
+                    <a class="catalog-item-title">Villas at Poco Diablo</a>
                   </p>
                   <p class="catalog-item-cost">
                       <span class="catalog-item-typeLocation">Апартаменты</span>
                       <span class="catalog-item-cost">от 2000 Р.</span>
                   </p>
                   <p class="catalog-item-booking">
-                      <a class="button" href="#">Подробнее</a>
+                      <a class="button button-link" href="#">Подробнее</a>
                       <a class="button" href="#">Забронировать</a>
-                      <span class="catalog-item-rating">Рейтинг: 9.2</span>
+                  </p>
+                  <div class="catalog-item-stars">
+                    <img src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
+                    <img src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
+                  </div>
+                  <p class="catalog-item-rating">
+                    <span>Рейтинг: 9.2</span>
                   </p>
               </li>
           </ul>
       </section>
+
     </main>
 
     <footer class="main-footer">
