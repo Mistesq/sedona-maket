@@ -18,6 +18,13 @@ a {
   text-decoration: none;
 }
 
+.inline-block {
+  font: inherit;
+  color: #333333;
+
+  background-color: #ffffff;
+}
+
 .button{
   font: inherit;
 
@@ -54,6 +61,74 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.button-calendar {
+  height: 22px;
+  width: 21px;
+  background-color: #ffffff;
+  background-position: center;
+  background-image: url(../img/calendar1.png);
+}
+
+.button-calendar:hover {
+  background-color: #ffffff;
+  background-image: url(../img/calendar.svg);
+}
+
+.button-calendar:focus {
+  background-color: #ffffff;
+  background-image: url(../img/calendar2.png);
+}
+
+.button-minus {
+  height: 10px;
+  width: 12px;
+  background-color: #ffffff;
+  background-position: center;
+  background-image: url(../img/minus1.png);
+  background-repeat: no-repeat;
+}
+
+.button-minus:hover {
+  background-color: #ffffff;
+  background-image: url(../img/minus2.png);
+}
+
+.button-minus:focus{
+  background-color: #ffffff;
+  background-image: url(../img/minus3.png);
+}
+
+.button-plus {
+  height: 12px;
+  width: 12px;
+  background-color: #ffffff;
+  background-position: center;
+  background-image: url(../img/plus1.png);
+  background-repeat: no-repeat;
+}
+
+.button-plus:hover {
+  background-color: #ffffff;
+  background-image: url(../img/plus2.png);
+}
+
+.button-plus:focus {
+  background-color: #ffffff;
+  background-image: url(../img/plus3.png);
+}
+
+.button-filters {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+.button-filters:hover,
+.button-filters:focus {
+  color: #000000; 
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
 .main-navigation {
   font-size: 14px;
   line-height: 26px;
@@ -85,6 +160,18 @@ a {
   color: #766357;
 }
 
+.feature-info-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.feature-info {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
 .features-list {
   list-style: none;
 }
@@ -93,15 +180,30 @@ a {
   text-align: center;
 }
 
+.feature-item h3{
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+
+  background-color: transparent;
+}
+
 .feature-item-allotted{
   color: #ffffff;
 
   background-color: #81b3d2;
 }
 
-.feature-item h3{
-  font-size: 21px;
-  line-height: 21px;
+.feature-item-allotted h3{
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.feature-item-footer {
+  color: #000000;
+
+  background-color: #eeeeee;
 }
 
 .catalog-list {
@@ -112,6 +214,8 @@ a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+
+  cursor: pointer;
 }
 
 .catalog-item-title:hover {
@@ -149,19 +253,72 @@ a {
 }
 
 .form-search input[type="text"] {
+  height: 38px;
   font: inherit;
   color: #000000;
   text-transform: uppercase;
 
-  border: #000000;
+  border: 2px solid #ffffff;
+}
+
+.form-search input[type="text"]::placeholder {
+  color: #000000;
 }
 
 .form-search input[type="text"]:hover {
   background-color: #ebebeb;
-  outline-color: #ebebeb;
+  border-color: #ebebeb;
 }
 
 .form-search input[type="text"]:focus {
-  background-color: #f9fbf6;
+  background-color: transparent;
   outline: 2px solid #ebebeb;
+}
+
+.breadcrumbs b{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.breadcrumbs-list {
+  list-style: none;
+
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.breadcrumbs a {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.breadcrumbs-current a {
+  color: #81b3d2;
+}
+
+.breadcrumbs-bold {
+  font-weight: 700;
+}
+
+.filters {
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+
+  background-position: center;
+  background-image: url(../img/filters.jpg);
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filters-hotels {
+  list-style: none;
+}
+
+.filters-type-housing {
+  list-style: none;
 }
