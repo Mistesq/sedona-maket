@@ -14,11 +14,23 @@ body {
   background-repeat: no-repeat;
 }
 
+
 a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .inline-block {
+  max-width: 1200px;
+  margin: 0 auto;
+
   font: inherit;
   color: #333333;
 
@@ -124,19 +136,35 @@ a {
 
 .button-filters:hover,
 .button-filters:focus {
-  color: #000000; 
+  color: #000000;
   background-color: #ffffff;
   border: 2px solid #ffffff;
 }
 
 .main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
 }
 
+.main-logo {
+  margin-bottom: 60px;
+}
+
 .site-navigation {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+
   list-style: none;
+  display: flex;
+  flex-direction: row;
+
 }
 
 .site-navigation a {
@@ -156,31 +184,74 @@ a {
   color: #766357;
 }
 
+.site-navigation li {
+  width: 20%;
+  padding: 0 6%;
+}
+
 .site-navigation .current-link {
   color: #766357;
 }
 
+.features {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 .feature-info-title {
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 21px;
+  line-height: 26px;
   font-weight: 700;
+
+  margin-bottom: 41px;
 }
 
 .feature-info {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+
+  margin-bottom: 60px;
 }
 
 .features-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  /* align-items: flex-start;
+  align-content: flex-start; */
 }
 
 .feature-item {
+  width: 33%;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.feature-item-img{
+  height: 100px;
+}
+
+.feature-img {
+  padding-top: 0;
+  width: 66%;
   text-align: center;
 }
 
+.feature-img img{
+  width: 100%;
+}
+
 .feature-item h3{
+  /* padding-bottom: 30px; */
+
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -188,7 +259,7 @@ a {
   background-color: transparent;
 }
 
-.feature-item-allotted{
+.feature-item-allotted {
   color: #ffffff;
 
   background-color: #81b3d2;
@@ -198,12 +269,6 @@ a {
   color: #ffffff;
 
   background-color: #81b3d2;
-}
-
-.feature-item-footer {
-  color: #000000;
-
-  background-color: #eeeeee;
 }
 
 .catalog-list {
@@ -235,12 +300,19 @@ a {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+  text-align: center;
 }
 
-.search-hotels b{
+.search-hotels-title {
+  margin-bottom: 40px;
+
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+}
+
+.search-hotels-info {
+  margin-bottom: 50px;
 }
 
 
@@ -273,6 +345,11 @@ a {
 .form-search input[type="text"]:focus {
   background-color: transparent;
   outline: 2px solid #ebebeb;
+}
+
+.breadcrumbs {
+  padding: 0;
+  margin: 0;
 }
 
 .breadcrumbs b{
