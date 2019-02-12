@@ -71,8 +71,23 @@
             </ul>
           </fieldset>
           <fieldset class="filter-cost-block">
-            <legend class="filter-legend">Стоимость в сутки(Р):</legend>
-            <div class="container-cost-value">
+            <div class="filter-range">
+              <legend class="filter-legend">Стоимость в сутки(Р):</legend>
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="button button-filters" type="submit">Показать</button>
+            </div>
+
+            <!-- <div class="container-cost-value">
               <span>от 0</span>
               <img src="img/line.jpg" height="22" width="2" alt="линия">
               <span>до 3000</span>
@@ -82,7 +97,7 @@
             <a href="" title="0"><img src="img/filter-button.svg" height="20" width="22" alt="до 3000"></a>
             <a href="" title="3000"><img src="img/filter-button.svg" height="20" width="22" alt="от 0"></a>
             </p>
-            <button class="button button-filters" type="submit">Показать</button>
+            <button class="button button-filters" type="submit">Показать</button> -->
           </fieldset>
       </section>
 
