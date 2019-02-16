@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <title>Гостиницы Седоны</title>
 </head>
 <body>
   <div class="inline-block">
@@ -36,69 +36,73 @@
 
       <section class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
-          <fieldset>
-            <legend class="filter-legend">Инфаструктура:</legend>
+          <fieldset class="filters-group-option">
+            <legend class="filter-legend">Инфраструктура:</legend>
             <ul class="filters-hotels">
               <li class="filters-option">
-                <input   class="filters-input filter-input-checkbox" id="filters-pool" type="checkbox" name="pool" checked>
-                <label for="filters-pool">Бассейн</label>
+                <label class="filters-checkbox" for="filters-pool">
+                  <input class="visually-hidden filters-input filter-input-checkbox" id="filters-pool" type="checkbox" name="pool" checked>
+                  <span class="checkbox-indicator"></span>
+                  Бассейн
+                </label>
               </li>
               <li class="filters-option">
-                <input  class="filters-input filters-input-checkbox" id="filters-parking" type="checkbox" name="parking">
-                <label for="filters-parking">Парковка</label>
+                <label class="filters-checkbox" for="filters-parking">
+                  <input class="visually-hidden filters-input filters-input-checkbox" id="filters-parking" type="checkbox" name="parking">
+                  <span class="checkbox-indicator"></span>
+                  Парковка
+                </label>
               </li>
               <li class="filters-option">
-                <input  class="filters-input filters-input-checkbox" id="filters-wifi" type="checkbox" name="wifi">
-                <label for="filters-wifi">Wi-fi</label>
+                <label class="filters-checkbox" for="filters-wifi">
+                  <input class="visually-hidden filters-input filters-input-checkbox" id="filters-wifi" type="checkbox" name="wifi">
+                  <span class="checkbox-indicator"></span>
+                  Wi-fi
+                </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filters-group-option">
             <legend class="filter-legend">Тип жилья:</legend>
             <ul class="filters-type-housing">
               <li class="filters-option">
-                <input class=" vissually-hidden filters-input filter-input-checkbox" id="filters-hotel" type="checkbox" name="hotel" checked>
-                <label for="filters-hotel">Гостиница</label>
+                <label class="filters-checkbox" class="filters-checkbox"for="filters-hotel">
+                  <input class="visually-hidden filters-input filter-input-checkbox" id="filters-hotel" type="checkbox" name="hotel" checked>
+                  <span class="checkbox-indicator"></span>
+                  Гостиница
+                </label>
               </li>
               <li class="filters-option">
-                <input class=" vissually-hidden filters-input filter-input-checkbox" id="filters-motel" type="checkbox" name="motel" checked>
-                <label for="filters-motel">Мотель</label>
+                <label class="filters-checkbox" for="filters-motel">
+                  <input class="visually-hidden filters-input filter-input-checkbox" id="filters-motel" type="checkbox" name="motel" checked>
+                  <span class="checkbox-indicator"></span>
+                  Мотель
+                </label>
               </li>
               <li class="filters-option">
-                <input class=" vissually-hidden filters-input filter-input-checkbox" id="filters-apartments" type="checkbox" name="apartments" checked>
-                <label for="filters-apartments">Апартаменты</label>
+                <label class="filters-checkbox" for="filters-apartments">
+                  <input class="visually-hidden filters-input filter-input-checkbox" id="filters-apartments" type="checkbox" name="apartments" checked>
+                  <span class="checkbox-indicator"></span>
+                  Апартаменты
+                </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter-cost-block">
-            <div class="filter-range">
-              <legend class="filter-legend">Стоимость в сутки(Р):</legend>
-              <div class="price-controls">
-                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-              </div>
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
-                </div>
-                <div class="range-toggle range-toggle-min"></div>
-                <div class="range-toggle range-toggle-max"></div>
-              </div>
-              <button class="button button-filters" type="submit">Показать</button>
+          <div class="filter-range">
+            <div class="filter-range-title">Стоимость в сутки (р):</div>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
             </div>
-
-            <!-- <div class="container-cost-value">
-              <span>от 0</span>
-              <img src="img/line.jpg" height="22" width="2" alt="линия">
-              <span>до 3000</span>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
             </div>
-            <p>
-              <img src="img/filter-range.png" height="2" width="317" alt="линия">
-            <a href="" title="0"><img src="img/filter-button.svg" height="20" width="22" alt="до 3000"></a>
-            <a href="" title="3000"><img src="img/filter-button.svg" height="20" width="22" alt="от 0"></a>
-            </p>
-            <button class="button button-filters" type="submit">Показать</button> -->
-          </fieldset>
+            <button class="btn-transparent" type="submit">Показать</button>
+          </div>
       </section>
 
       <section class="breadcrumbs">
@@ -117,8 +121,12 @@
             </li>
         </ul>
         <div class="breadcrumbs-arrows">
-          <img src="img/icon-up-dir.svg" width="11" height="10" alt="стрелка вверх">
-          <img src="img/icon-down-dir.svg" width="11" height="10" alt="стрелка вниз">
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+            <path fill="#231F20" d="M5.5 0L0 10h11z"/>
+          </svg>
+          <svg class="arrows-current" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+            <path  fill="#231F20" d="M5.5 10L0 0h11"/>
+          </svg>
         </div>
       </section>
 
@@ -149,10 +157,10 @@
                     </li>
                     <li class="hotel-info-item hotel-item-rating">
                       <div class="catalog-item-stars">
-                        <img src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
-                        <img src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
-                        <img src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
-                        <img src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
+                        <img class="catalog-star" src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
+                        <img class="catalog-star" src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
+                        <img class="catalog-star" src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
+                        <img class="catalog-star" src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
                       </div>
                       <p class="catalog-item-rating">
                         <span>Рейтинг: 8.5</span>
@@ -185,9 +193,9 @@
                     </li>
                     <li class="hotel-info-item hotel-item-rating">
                       <div class="catalog-item-stars">
-                        <img src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
-                        <img src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
-                        <img src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
+                        <img class="catalog-star" src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
+                        <img class="catalog-star" src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
+                        <img class="catalog-star" src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
                       </div>
                       <p class="catalog-item-rating">
                         <span>Рейтинг: 8.9</span>
@@ -220,8 +228,8 @@
                     </li>
                     <li class="hotel-info-item hotel-item-rating">
                       <div class="catalog-item-stars">
-                        <img src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
-                        <img src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
+                        <img class="catalog-star" src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
+                        <img class="catalog-star" src="img/star.svg" width="18" height="17" alt="звезда рейтинга">
                       </div>
                       <p class="catalog-item-rating">
                         <span>Рейтинг: 9.2</span>
@@ -241,19 +249,40 @@
           <div class="footer-social">
               <ul>
                   <li>
-                      <a class="social-button" href="#">Вконтакте</a>
+                      <a class="social-button" href="#">
+                          <span class="visually-hidden">Вконтакте</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="15" viewBox="0 0 26.14 14.91">
+                              <path d="M26 13.47l-.09-.17a13.55 13.55 0 0 0-2.6-3q-.87-.83-1.1-1.12A1 1 0 0 1 22 8a10.27 10.27 0 0 1 1.22-1.78l.88-1.16q2.35-3.13 2-4L26 .94a.8.8 0 0 0-.4-.22 2.14 2.14 0 0 0-.87 0h-3.92a.51.51 0 0 0-.27 0h-.3a.6.6 0 0 0-.15.14.93.93 0 0 0-.14.24 22.22 22.22 0 0 1-1.46 3.06q-.5.84-.93 1.46a7 7 0 0 1-.71.91 4.94 4.94 0 0 1-.52.47q-.23.18-.35.15l-.23-.05a.9.9 0 0 1-.31-.33 1.49 1.49 0 0 1-.16-.53v-.55-.65-.57-1.12-1-.75a3.14 3.14 0 0 0 0-.62 2.12 2.12 0 0 0-.14-.44.73.73 0 0 0-.28-.33 1.57 1.57 0 0 0-.46-.18A9 9 0 0 0 12.57 0a8.93 8.93 0 0 0-3.25.33 1.83 1.83 0 0 0-.52.41q-.25.3-.07.33a1.67 1.67 0 0 1 1.16.59l.08.16a2.6 2.6 0 0 1 .19.63 6.32 6.32 0 0 1 .12 1 10.59 10.59 0 0 1 0 1.7q-.07.71-.13 1.1a2.21 2.21 0 0 1-.18.64 2.69 2.69 0 0 1-.16.3l-.07.07a1 1 0 0 1-.37.07.86.86 0 0 1-.46-.19 3.27 3.27 0 0 1-.56-.52 7 7 0 0 1-.66-.93q-.37-.6-.76-1.42l-.22-.39q-.2-.38-.56-1.11t-.62-1.43A.9.9 0 0 0 5.2.9h-.07a.93.93 0 0 0-.22-.16A1.44 1.44 0 0 0 4.6.65L.87.68A1 1 0 0 0 .1.94L0 1a.44.44 0 0 0 0 .22 1.08 1.08 0 0 0 .08.37Q.9 3.53 1.86 5.31t1.66 2.87Q4.23 9.27 5 10.24t1 1.24l.37.41.34.33a8.06 8.06 0 0 0 1 .78 16.34 16.34 0 0 0 1.4.9 7.6 7.6 0 0 0 1.79.72 6.19 6.19 0 0 0 2 .22h1.57a1.08 1.08 0 0 0 .72-.3l.05-.07a.9.9 0 0 0 .1-.25 1.38 1.38 0 0 0 0-.37 4.48 4.48 0 0 1 .09-1.05 2.77 2.77 0 0 1 .23-.71 1.74 1.74 0 0 1 .29-.4 1.19 1.19 0 0 1 .23-.2h.11a.86.86 0 0 1 .77.21 4.52 4.52 0 0 1 .83.79q.39.47.93 1.05a6.41 6.41 0 0 0 1 .87l.27.16a3.31 3.31 0 0 0 .71.3 1.53 1.53 0 0 0 .76.07l3.48-.05a1.58 1.58 0 0 0 .8-.17.68.68 0 0 0 .34-.37 1.06 1.06 0 0 0 0-.46 1.71 1.71 0 0 0-.1-.36z"
+                                  fill="#fff">
+                              </path>
+                          </svg>
+                      </a>
                   </li>
                   <li>
-                      <a class="social-button" href="#">Фейсбук</a>
+                      <a class="social-button" href="#">
+                          <span class="visually-hidden">Фейсбук</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 10.15 21.74">
+                              <path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z"
+                                  fill="#fff" />
+                      </a>
                   </li>
                   <li>
-                      <a class="social-button" href="#">Инстаграм</a>
+                      <a class="social-button" href="#">
+                          <span class="visually-hidden">Инстаграм</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                              <path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z"
+                                  fill="#fff">
+                              </path>
+                          </svg>
+                      </a>
                   </li>
               </ul>
           </div>
           <p class="footer-copyright">
-              <b>Разработано:</b>
-              <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+            <span class="visually-hidden">htmlacademy</span>
+              <a class="copyright-button" href="https://htmlacademy.ru">
+                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.08 36.85"><title>logo-htmlacademy-small1</title><path d="M44.61,26.88a2,2,0,0,0,.55-0.1v1.33a3.25,3.25,0,0,1-1.18.21,1.67,1.67,0,0,1-1.67-1,4.84,4.84,0,0,1-3.14,1.08c-1.51,0-2.91-.83-2.91-2.55,0-2.13,2-2.79,3.71-2.79a11.08,11.08,0,0,1,2.17.25v-0.3c0-1-.76-1.77-2.19-1.77a7.42,7.42,0,0,0-3,.64v-1.7a10.21,10.21,0,0,1,3.19-.55c2.36,0,3.81,1.12,3.81,3.65v3a0.54,0.54,0,0,0,.49.59h0.17Zm-6.44-1.13A1.35,1.35,0,0,0,39.63,27h0.11a3.39,3.39,0,0,0,2.41-1V24.58a9.72,9.72,0,0,0-1.81-.21c-1,0-2.16.33-2.16,1.38h0Zm12.36-6.11a5,5,0,0,1,2.57.64V22a4.08,4.08,0,0,0-2.3-.7,2.75,2.75,0,1,0,0,5.49,5,5,0,0,0,2.43-.64v1.71a6.27,6.27,0,0,1-2.76.57A4.21,4.21,0,0,1,46,24.51q0-.21,0-0.41a4.32,4.32,0,0,1,4.18-4.46h0.38Zm12.17,7.24a2,2,0,0,0,.55-0.1v1.33a3.25,3.25,0,0,1-1.18.21,1.67,1.67,0,0,1-1.67-1,4.84,4.84,0,0,1-3.14,1.08c-1.51,0-2.91-.83-2.91-2.55,0-2.13,2-2.79,3.71-2.79a11.08,11.08,0,0,1,2.17.25v-0.3c0-1-.76-1.77-2.19-1.77a7.42,7.42,0,0,0-3,.64v-1.7a10.21,10.21,0,0,1,3.19-.55c2.36,0,3.81,1.12,3.81,3.65v3a0.54,0.54,0,0,0,.49.59h0.17Zm-6.44-1.13A1.35,1.35,0,0,0,57.73,27h0.11a3.39,3.39,0,0,0,2.41-1V24.58a9.72,9.72,0,0,0-1.81-.21c-1.06,0-2.16.33-2.16,1.38h0ZM73,16V28.2H71.35V26.88a3.88,3.88,0,0,1-3.19,1.54,4.4,4.4,0,0,1,0-8.78,3.81,3.81,0,0,1,3,1.3V16H73Zm-4.53,5.22a2.76,2.76,0,1,0,0,5.52A2.86,2.86,0,0,0,71.15,25V23A2.91,2.91,0,0,0,68.49,21.27ZM79,19.64c3.31,0,4.46,2.68,3.92,5.09H76.7c0.21,1.5,1.67,2.11,3.19,2.11a6.11,6.11,0,0,0,2.64-.59v1.6a7.14,7.14,0,0,1-3,.57C77,28.42,74.78,27,74.78,24a4.18,4.18,0,0,1,4-4.39H79Zm0.09,1.54a2.28,2.28,0,0,0-2.44,2.1v0.06H81.3A2,2,0,0,0,79.13,21.18Zm5.73,7V19.87h1.65v1a3.81,3.81,0,0,1,2.78-1.27A2.86,2.86,0,0,1,91.89,21a4.12,4.12,0,0,1,2.91-1.33A3.06,3.06,0,0,1,98,23V28.2h-1.9V23.05a1.59,1.59,0,0,0-1.42-1.75H94.42a2.8,2.8,0,0,0-2.07,1.12V28.2h-1.9V23.05A1.59,1.59,0,0,0,89,21.31H88.8a3,3,0,0,0-2.21,1.29v5.63H84.86Zm21.31-8.33h1.9l-3.91,9.46c-0.9,2.17-2.09,2.86-3.35,2.86a4.76,4.76,0,0,1-1.1-.14V30.46a2.86,2.86,0,0,0,.85.12c0.9,0,1.58-.64,2.07-1.9l0.17-.42-4-8.4h2l2.86,6.29ZM38.73,1.46V6.22a3.81,3.81,0,0,1,2.7-1.14,3.25,3.25,0,0,1,3.44,3.4v5.15H43V8.72a1.81,1.81,0,0,0-1.61-2h-0.3a2.93,2.93,0,0,0-2.32,1.39v5.52h-1.9V1.46h1.9ZM49.94,2.31v3h3V6.91h-3v3.81c0,1.1.5,1.46,1.58,1.46a4.49,4.49,0,0,0,1.69-.33v1.6A6.8,6.8,0,0,1,51,13.8a2.55,2.55,0,0,1-2.86-2.74V6.89H46.58V5.26h1.5V2.74Zm5.4,11.31V5.28H57v1A3.81,3.81,0,0,1,59.77,5a2.86,2.86,0,0,1,2.6,1.33A4.12,4.12,0,0,1,65.28,5,3.06,3.06,0,0,1,68.44,8.4v5.21h-1.9V8.46a1.59,1.59,0,0,0-1.42-1.75H64.89a2.8,2.8,0,0,0-2.07,1.12v5.78h-1.9V8.46A1.59,1.59,0,0,0,59.5,6.71H59.27A3,3,0,0,0,57.06,8v5.63H55.34ZM71.17,1.45H73V13.6H71.17V1.45ZM14.71,0H14.55L0,1.54V28.21l14.55,8.66,14.55-8.66V1.54Zm12.5,27.1L14.55,34.64,1.9,27.12V16.18l12.59,7.5V25L5.86,19.9v1.31l8.68,5.21v1.39L5.87,22.65V24l8.68,5.21,8.75-5.24V18.31L27.2,16V27.12Zm0-12.53-3.48,2-1.6,1L14.51,13v1.31L21,18.23H21l-0.14.09-1,.54-5.37-3.2V17l4.24,2.52-1,.67-3.2-1.9v1.31l2.1,1.24L14.5,22.1,2,14.65,14.51,7.11Zm0-1.32L14.49,5.76,1.91,13.25v-10L14.56,1.92,27.21,3.25v10h0Z" transform="translate(0 -0.02)" fill="#231f20"/></svg>
+              </a>
           </p>
       </footer>
   </div>
