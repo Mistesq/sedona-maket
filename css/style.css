@@ -381,23 +381,24 @@ a {
 }
 
 .search-hotels-info {
-  margin-bottom: 138px;
+  margin-bottom: 48px;
 }
 
-.search-hotels-map {
-  position: relative;
+.container-form-map {
+  /* position: relative; */
+  overflow: hidden;
+}
+
+.container-map {
+  /* position: relative; */
   height: 473px;
 }
 
 .container-form{
   width: 47%;
-  /* margin: 0 auto; */
-  position: absolute;
-  top: 0;
-  left: 50%;
-
-  margin-top: -7.5%;
-  margin-left: -23.5%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  position: relative;
 
   background-color: #ffffff;
 }
@@ -415,6 +416,7 @@ a {
 
 
 .form-search {
+  box-sizing: border-box;
   padding: 55px 10% 55px;
   display: none;
   position: absolute;
@@ -430,15 +432,16 @@ a {
 }
 
 @keyframes fallout {
-  0%      { transform: translateY(-220px);
-  opacity: 0;}
+  0%      { transform: translateY(-320px);
+  }
+  60%      { }
   100%    { transform: translateY(0);}
 }
 
 .modal-show {
   display: block;
   animation-name: fallout;
-  animation-duration: 2.6s;
+  animation-duration: 2.0s;
 }
 
 .form-search p {
