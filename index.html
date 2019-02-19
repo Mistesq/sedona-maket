@@ -33,7 +33,10 @@
         </nav>
     </header>
     <main>
-      <img class="main-logo" src="img/WelcomeLogo.jpg" width="1200" height="508" alt="логотип">
+      <div class="container-main-logo">
+        <img class="main-logo-full" src="img/WelcomeLogo-768.jpg" width="768" height="508" alt="логотип">
+        <img class="main-logo-cropped" src="img/WelcomeLogo.jpg" width="1200" height="508" alt="логотип">
+      </div>
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
         <p class="feature-info-title"><b >Седона &#8212; небольшой городок в Аризоне,<br>
@@ -44,54 +47,56 @@
           <li class="feature-item feature-item-allotted">
             <h3>Настоящий<br> городок</h3>
             <p class="feature-item-number">&#8212; №1 &#8212;</p>
-            <p>Седона &#8212; не аттракцион для туристов,<br> там течет своя жизнь</p>
+            <p class="feature-item-info">Седона &#8212; не аттракцион для туристов, там течет своя жизнь</p>
           </li>
           <li class="feature-item feature-img">
-            <img src="img/photoHouse.jpg" width="800" height="256" alt="Отель">
+            <img class="feature-full-img" src="img/photoHouse-768.jpg" width="512" height="256" alt="Мост Дьявола">
+            <img class="feature-cropped-img" src="img/photoHouse.jpg" width="800" height="256" alt="Отель">
           </li>
           <li class="feature-item">
             <div class="feature-item-img">
               <img src="img/icon-1.svg" width="75" height="72" alt="иконка жилья">
             </div>
             <h3>Жилье</h3>
-            <p>Рекомендуем пожить в настоящем<br> мотеле, все как в кино!</p>
+            <p class="feature-item-info">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li class="feature-item">
             <div class="feature-item-img">
               <img src="img/icon-3.svg" width="74" height="70" alt="иконка еды">
             </div>
             <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
+            <p class="feature-item-info">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="feature-item">
             <div class="feature-item-img">
-              <img src="img/icon-2.svg" width="64" height="76" alt="иконка сувениров">
+              <img class="img-three" src="img/icon-2.svg" width="64" height="76" alt="иконка сувениров">
             </div>
             <h3>Сувениры</h3>
-            <p>Не только китайского, но и местоного<br> производства!</p>
+            <p class="feature-item-info">Не только китайского, но и местоного производства!</p>
           </li>
           <li class="feature-item feature-img">
-            <img src="img/PhotoMount2.jpg" width="800" height="256" alt="Мост Дьявола">
+            <img class="feature-full-img" src="img/PhotoMount2-768.jpg" width="512" height="256" alt="Мост Дьявола">
+            <img class="feature-cropped-img" src="img/PhotoMount2.jpg" width="800" height="256" alt="Мост Дьявола">
           </li>
           <li class="feature-item feature-item-allotted">
             <h3>Там есть<br> мост дьявола</h3>
             <p class="feature-item-number">&#8212; №2 &#8212;</p>
-            <p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
+            <p class="feature-item-info">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </li>
           <li class="feature-item feature-item-footer">
             <h3>Небольшая<br> площадь</h3>
             <p class="feature-item-number">&#8212; №3 &#8212;</p>
-            <p>Все достопримечательности<br> находятся очень близко</p>
+            <p class="feature-item-info">Все достопримечательности находятся очень близко</p>
           </li>
           <li class="feature-item feature-item-footer">
             <h3>Красивая<br> дорога</h3>
             <p class="feature-item-number">&#8212; №4 &#8212;</p>
-            <p>Ехать в Седона из Лас-Вегаса совсем<br> не скучно!</p>
+            <p class="feature-item-info">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="feature-item feature-item-footer">
             <h3>Мало<br> туристов</h3>
             <p class="feature-item-number">&#8212; №5 &#8212;</p>
-            <p>Большинство едет в гранд Каньон и<br> толпится там</p>
+            <p class="feature-item-info">Большинство едет в гранд Каньон и толпится там</p>
           </li>
         </ul>
       </section>
@@ -154,8 +159,8 @@
             <h2>#VISITSEDONA</h2>
         </div>
         <div class="footer-social">
-            <ul>
-                <li>
+            <ul class="footer-social-list">
+                <li class="footer-social-item" >
                     <a class="social-button" href="#">
                         <span class="visually-hidden">Вконтакте</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="15" viewBox="0 0 26.14 14.91">
@@ -165,7 +170,7 @@
                         </svg>
                     </a>
                 </li>
-                <li>
+                <li class="footer-social-item">
                     <a class="social-button" href="#">
                         <span class="visually-hidden">Фейсбук</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 10.15 21.74">
@@ -173,7 +178,7 @@
                                 fill="#fff" />
                     </a>
                 </li>
-                <li>
+                <li class="footer-social-item">
                     <a class="social-button" href="#">
                         <span class="visually-hidden">Инстаграм</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
