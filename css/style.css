@@ -83,19 +83,6 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-
-/* .button-filters {
-  background-color: transparent;
-  border: 2px solid #ffffff;
-}
-
-.button-filters:hover,
-.button-filters:focus {
-  color: #000000;
-  background-color: #ffffff;
-  border: 2px solid #ffffff;
-} */
-
 .main-navigation {
   position: relative;
 
@@ -423,6 +410,12 @@ a {
   height: 473px;
 }
 
+.container-map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 .container-form{
   max-width: 568px;
   margin: 0 auto;
@@ -597,7 +590,7 @@ a {
 }
 
 .breadcrumbs b{
-  margin-right: 4.2%;
+  margin-right: 45px;
 
   font-size: 21px;
   line-height: 26px;
@@ -605,9 +598,8 @@ a {
 }
 
 .breadcrumbs-list {
-  width: 30.5%;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
   padding-top: 7px;
@@ -616,6 +608,10 @@ a {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
+}
+
+.breadcrumbs-item {
+  margin-right: 37px;
 }
 
 .breadcrumbs a {
@@ -679,9 +675,9 @@ a {
   line-height: 21px;
   color: #ffffff;
 
-  background-position: 0% 100%;
   background-image: url(../img/filters1.jpg);
   background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .filters-option {
@@ -742,7 +738,7 @@ a {
 
 .filter-range {
   margin-left: auto;
-  width: 31.25%;
+  width: 330px;
 
   color: #ffffff;
   text-transform: uppercase;
@@ -785,7 +781,7 @@ a {
   display: inline-block;
 
   font-size: 14px;
-  line-height: 38px;
+  line-height: 37px;
   vertical-align: top;
 
   cursor: pointer;
@@ -793,13 +789,14 @@ a {
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 27.30%;
-  padding-left: 19.8%;
+  width: 90px;
+  padding-left: 65px;
 }
 
 .price-controls input {
   width: 50px;
   margin: 0;
+  padding: 0;
 
   color: inherit;
   font: inherit;
@@ -1007,10 +1004,35 @@ a {
     margin-top: 25px;
   }
 
+}
+
+@media (max-width: 835px) {
+
+  .filters {
+
+    background-image: url(../img/filters1-768.jpg);
+    background-size: 100% 100%;
+  }
+
+
   .feature-info {
     margin-bottom: 20px;
   }
 
+  .filter-range {
+    width: 220px;
+
+  }
+
+  .price-controls .min-price,
+  .price-controls .max-price {
+    width: 65px;
+    padding-left: 35px;
+  }
+
+  .price-controls input {
+    width: 40px;
+  }
 }
 
 @media (max-width: 768px) {
